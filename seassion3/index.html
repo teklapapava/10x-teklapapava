@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+            height: 150px;
+            border: 2px;
+            color: blue;
+        }
+
+        header,
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            /* gap-კონტეინერში არსებულ ელემენტებს აშორებს */
+            gap: 10px;
+        }
+
+        .section1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .p1{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- დავალების მიხედვიტ აქ გვინდა კომენტარი -->
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Agapanthus_Postbloom.jpg/214px-Agapanthus_Postbloom.jpg"
+            alt="logo1">
+
+        <nav class="name-nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Thelionema_caespitosum.jpg/227px-Thelionema_caespitosum.jpg"
+            alt="logo2">
+    </header>
+    <main>
+        <!-- უიი სექშენსაც ნდომებია -->
+        <section class="section1">
+            <article>
+                <h2>Flower shop</h2>
+                <p>მარადმწვანე მცენარეების ონლაინ შოპი</p>
+                <P> <span class="kt">კატეგორიები</span></P>
+                <figure>
+                    <img src="./photo/photo1.jpg"
+                        alt="მარადმწვანე">
+                    <figcaption>ბოტანიკური ბაღი
+                </figure>
+                </figure>
+            </article>
+        </section>
+
+        <aside>
+            <section>
+                <p class="p1"><strong>მადლობა</strong></p>
+            </section>
+        </aside>
+    </main>
+
+    <!-- დავაკომენტაროთ ფუთერისთვისაც -->
+    <footer class="footer1">
+        <address>visit us: <a
+                href="https://www.google.com/maps/place/Kutaisi/@42.245878,42.5857384,12z/data=!4m6!3m5!1s0x405c8ce30e54af2d:0xfbec41b2d626656f!8m2!3d42.2718339!4d42.7059437!16zL20vMDI3Nnpn?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">Kutaisi</a> </address>
+        &copy; Tel: Fb: Inst
+    </footer>
+</body>
+
+</html>
