@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "IM Fell English", serif;
+}
+.header-cta {
+    font-family: inherit;
+    padding: 0 20px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: linear-gradient(#9BB6B3, #5F888A);
+    border: none;
+    text-wrap: nowrap;
+    gap: 5px;
+    color: #D6F2EC;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px auto;
+    padding-right: 16px;
+    border-radius: 50px;
+    background: linear-gradient(#FAEACA, #EFCFA4);
+    gap: 90px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    background-image: url("./media/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+}
+nav ul li {
+    margin-right: 15px;
+    color: #A9895D;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: #4A3211;
+}
+
+.active_nav_item{
+    color: #4A3211;
+}
+
+.separtor{
+    border: 1px;
+}
+.bottom-shape{
+    position: absolute;
+    bottom: 0;
+}
+.bottom-shape img{
+    display: block;
+    width: 100%;
+}
+.adventure_cards_container{
+    background-color: #131D24;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.tool-icon {
+    gap: 15px;
+    display: flex;
+    justify-content: center;    
+    margin-top: 40px;
+}
+.adventure_cards_title{
+    color:#EEF4F8
+}
+.adventure_cards_subtitle{
+    color: #79969C;
+}
+.adventure_cards_description{
+    color:#586061
+}
+span.separator{
+    margin: 0 20px;
+    width: 1px;
+    height: 18px;
+    background-color: #EDCEA3;
+}
+.Center_alignment{
+    border: 1px #232D33 solid;
+    height: 380px;
+}
+.arcane_palace{
+    background-image: url('./media/arcane-palace.png');
+    height: 590px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+}
+
+.arcane_palace h3{
+    color: #EEF4F8;
+    line-height: 45.67px;
+    font-size: 46px;
+    display: flex;
+    justify-content: center;
+}
+.choose{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    border-radius: 99px;
+    margin:30px;
+}
+.Watch_the_video{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: linear-gradient(#FAEACA,#EFCFA4);
+    width: 150px;
+    border-radius: 20px 0px 0px 20px;
+    gap: 10px;
+}
+.Play_the_Game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+    background: linear-gradient(#9BB6B3, #5F888A);
+    border-radius: 0px 20px 20px 0px;
+    gap:10px;
+}
+.The_Awakening_of_the_Powers{
+    display: flex;
+    justify-content: center;
+    background-color: #131D24;
+    gap: 120px;
+    padding-top: 100px;
+    padding-right: 240px;
+    padding-bottom: 100px;
+    padding-left: 240px;
+}
+.txt{
+   color: #EEF4F8;
+   width: 303px;
+   height: 299px;
+
+   gap: 50px;
+}
+.about_power{
+    font: 
+    IM FELL English;
+    width: 303px;
+    height: 30px;
+    size: 24px;
+    margin: 0;
+    display: flex;
+   
+}
+.about_text{
+    font: 
+    IM FELL English;
+    size: 12px;
+    line-height: 15px;
+    margin-top: 50px;
+}
+.last_bottom{
+    display: flex;
+    width: 140px;
+    height: 25px;
+    padding-top: 9px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    margin-top: 50px;
+    gap: 10px;
+    border-radius: 99px;
+    background: linear-gradient(#FAEACA, #EFCFA4)
+    
+}
+.change_color{
+    width: 90px;
+    height: 18px;
+    padding-top: 5px;
+    gap: 10px;
+    font: IM FELL English;
+    size: 14px;
+    line-height: 17px;
+    color:#503817
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(#FAEACA,#EFCFA4);
+    color: #4A3211;
+    padding: 50px;
+}
+
+.last_try{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(#FAEACA, #EFCFA4);
+}
+li{
+    list-style: none;
+    color: #4A3211;
+    
+}
+.adress h3, .about_us h3{
+    padding-top: 50px;
+    color: #4A3211;
+    margin-bottom: 20px;
+}
+.adress ul li, .about_us ul li{
+    font-size: 12px;
+}
+.thats_all{
+    display: flex;
+    gap: 10px;
+}
+.last_last{
+    display: flex;
+    justify-content: space-between;
+    background-color: #131D24;
+    color: #EEF4F8;
+    padding: 20px;
+}
