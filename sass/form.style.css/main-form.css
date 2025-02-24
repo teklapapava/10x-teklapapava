@@ -1,0 +1,27 @@
+.payments-wrapper {
+  display: flex;
+  margin-top: 250px;
+  width: clamp(300px, 80%, 1080px);
+  gap: 120px;
+  justify-content: space-around;
+}
+
+.payments-wrapper .mobile-phone {
+  width: 270px;
+  padding: 8px;
+  border-radius: 36px;
+  background: #f6f9fc;
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0 -2px 6px 0 rgba(10, 37, 64, 0.35);
+  top: 60px;
+  z-index: 2;
+}
+
+.payments-wrapper .phone-screen form {
+  height: 100%;
+  padding: 24px 16px;
+  border-radius: 28px;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 300px;
+  letter-spacing: 0.2px;
+}/*# sourceMappingURL=main-form.css.map */

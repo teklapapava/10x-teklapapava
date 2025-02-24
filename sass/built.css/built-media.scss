@@ -1,0 +1,27 @@
+@media (max-width: 1080px) {
+    .built-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    .built-wrapper-top .main-caption:nth-child(2) {
+        margin-top: 0;
+    }
+    .built-wrapper-bottom .main-caption:nth-child(2) {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-caption {
+        padding: 16px; /* Increased padding on smaller screens for better spacing */
+        /* Optional: You could also consider removing the background color or using a different one on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-caption {
+        padding: 12px; /* Adjust padding for extra small screens */
+    }
+}

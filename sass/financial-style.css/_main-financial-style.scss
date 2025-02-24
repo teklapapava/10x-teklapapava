@@ -1,0 +1,268 @@
+@font-face {
+    font-family: inter;
+    font-weight: 400;
+    font-style: normal;
+    src: url(./fonts/static/Inter_18pt-Medium.ttf);
+}
+@font-face {
+    font-family: inter;
+    src: url(./fonts/static/Inter_18pt-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+    background-color: $bckcl;
+    @include for-margin(50px, 0, 0, 0,);
+}
+
+#financial-products{
+    @include for-displey(flex, center, center, column);
+    @include for-margin(70px, 0, 70px, 0);
+    @include for-padding(60px, 0, 0, 0);
+    background-color: $bckcl;
+}
+
+.info-panel {
+    width: clamp(300px, 60%, 810px);
+    @include for-margin(0, 0, 90px, 0);
+}
+
+.subheading {
+    @include text-style(inter, 16px, 400,  rgba(99, 91, 255, 1), 28px, 0);
+    @include for-margin(0, 0, 32px, 0);
+    @include for-padding(0, 0, 0, l6px);
+}
+
+.main-heading {
+    @include text-style(inter, 34px, bold, rgba(10, 37, 64, 1), 64px, 0);
+    @include for-margin(0, 0, 32px, 0);
+    @include for-padding(0, 0, 0, 16px);
+}
+
+.description {
+    @include text-style(inter, 16px, bold, rgba(66, 84, 102, 1), 28px, 0);
+    @include for-padding(0, 0, 0, 16px);
+}
+
+#card-container{
+    @include for-margin(90px, 0, 0, 0);
+}
+
+.card-container{
+    @include for-margin(300px, 0, 0, 0);
+}
+
+.card-wrapper{
+    @include for-displey(flex, start, center, column);
+    height: 349px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.card2{
+    @include for-margin(-120px, 0, 0, 0);
+    z-index: 1;
+}
+
+.card1{
+    @include for-margin(-120px, 0, 0, 0);
+    z-index: 2;
+    border-radius: 0 0 50px, 50px;
+}
+
+
+.vector-wraper{
+    @include text-style(inter, 16px, 400, black, normal, 0);
+    @include for-margin(0, 0, 32px, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.optimize-payments{
+    @include text-style(inter, 24px, bold, rgba(10, 37, 64, 1), 48px, -0.2px);
+    @include for-margin(30px, 0, 0, 0);
+}
+
+.rates{
+    @include text-style(inter, 16px, bold, rgba(66, 84, 102, 1), 28px, .2px);
+    @include for-margin(40px, 0, 0, 0);
+}
+
+.global-payments button{
+    @include text-style(inter, 16px, 400, $bckcl, 0, 0);
+    @include for-margin(40px, 0, 0, 0);
+    @include for-padding(10px, 20px, 10px, 20px);
+    border-radius: 16.5px;
+    background-color: rgba(99, 91, 255, 1);
+    border: none;
+    position: relative;
+}
+
+.Start-with-Payments::after{
+    content: url(/assets/media/vector2.png);
+    @include for-margin(0, 0, 0, 8px);
+    position: absolute;
+}
+
+.see-also-class{
+    @include text-style(inter, 16px, bold, rgba(10, 37, 64, 1), 24px, -0.2px);
+    @include for-margin(40px, 0, 0, 0);
+}
+
+.links{
+    @include text-style(inter, 16px, 400, black, normal, 0);
+    @include for-margin(10px, 5px, 0, 0);
+}
+
+.Billing-wrapper{
+    @include for-displey(flex, space-between, stretch, row);
+    @include for-margin(250px, 0, 0, 0);
+    gap: 120px;
+    width: clamp(500px, 80%, 1080px);
+}
+
+.connect-wrapper{
+    @include for-displey(flex, space-between, stretch, row);
+    @include for-margin(250px, 0, 0, 0);
+    gap: 120px;
+    width: clamp(500px, 80%, 1080px);
+}
+
+.Issuing-wrapper{
+    @include for-displey(flex, space-between, stretch, row);
+    @include for-margin(250px, 0, 0, 0);
+    gap: 120px;
+    width: clamp(500px, 80%, 1080px);
+}
+
+.quantum-wrapper{
+    background-color: $bckcl;
+    @include for-padding(16px, 16px, 16px, 16px);
+    font-family: inter;
+}
+
+.quantum-main{
+    @include for-displey(flex, space-between, stretch, row);
+    @include for-padding(0.81px, 22.71px, 30.81px, 0.71px);
+    border-bottom:1px solid grey;
+}
+.quantum-icon{
+    @include for-displey(flex, start, stretch, row);
+    @include width-height(81.48px, 17.03px);
+    gap: 5.68px;
+    color: rgba(63, 75, 102, 1);
+    @include for-padding(10px, 0, 0, 15px);
+}
+
+.quantum-icon img{
+    @include width-height(16.22px, 16.22px);
+}
+    
+.menu-items{
+    @include for-displey(flex, start, stretch, row);
+    @include width-height(211px, 12px);
+    gap: 14px;
+    color: rgba(63, 75, 102, 1);
+    @include for-padding(10px, 0, 0, 0);
+}
+
+.paymants-month{
+    @include for-displey(flex, start, stretch, row);
+    @include for-padding(9.73px, 7.71px, 12.17px, 7.71);
+    gap: 8.11px;
+}
+
+.pricing-card{
+    @include for-padding(17.84px, 13.79px, 0,  13.79px);
+    gap: 5.68px;
+}
+
+.standard{
+    @include text-style(inter, 16px, 400, rgba(63, 75, 102, 1), 17.03px, 0);
+}
+
+.up-to-5-users{
+    @include text-style(inter, 8px, 400, rgba(63, 75, 102, 1), 12.98px, 0);
+    @include for-margin(20px, 0, 0, 0);
+}
+
+.price-month{
+    @include for-display(flex, start, stretch, row);
+    @include for-margin(20px, 0, 0, 0);
+}
+
+.price-month h3{
+    @include text-style(inter, 16px, 400, rgba(63, 75, 102, 1), 24.14px, 0);
+}
+
+.price-month p{
+    @include text-style(inter, .5rem, 400, rgba(63, 75, 102, 1), 11.36px, 0);
+    margin-top: revert;
+}
+
+.paymants-month button{
+    border-radius: 3.24px;
+    @include for-padding(8.11px, 33.77px, 4.06px, 33.77px);
+    background-color: rgba(153, 102, 255, 1);
+    border: none;
+    @include text-style(inter, 8.36px, 400, $bckcl, 14.6px, 0);
+}
+
+.this-includes{
+    @include for-padding(11.36px, 0, 0, 0);
+    @include for-margin(20px, 0, 0, 0);
+}
+
+.this-includes{
+    > *:first-child {
+        @include text-style(inter, .5rem, 400, rgba(63, 75, 102, 1), 12.98, 0)
+    }
+} 
+
+.this-includes{
+    > span::before{
+    content: url(/assets/media/includes-Vector.png);
+    display: inline-block;
+    @include for-margin(0, 7px, 0, 0);
+    }
+} 
+.this-includes{
+   > span{
+    display: block;
+    color: rgba(63, 75, 102, 1);
+    @include for-margin(10px, 0, 0, 0);
+    } 
+} 
+
+.this-includes{
+    >  span:nth-of-type(1){
+        @include text-style(inter, .5rem, 400, black, 11.36px, 0);
+    }
+} 
+.this-includes{
+    > span:nth-of-type(2){
+        @include text-style(inter, .5rem, 400, black, 11.36px, 0);
+    }
+} 
+.this-includes{
+   > span:nth-of-type(3){
+    @include text-style(inter, .5rem, 400, black, 11.36px, 0);
+    } 
+} 
+.this-includes{
+    > span:nth-of-type(4){
+        @include text-style(inter, .5rem, 400, black, 11.36px, 0);
+    }
+} 
+.this-includes{
+  > span:nth-of-type(5){
+    @include text-style(inter, .5rem, 400, black, 11.36px, 0);
+    }  
+} 
+
+.payemnts-wrapper .global-payments {
+    width: clamp(200px, 80%, 500px);
+    @include for-padding(0, 0, 0, 16px);
+}
+

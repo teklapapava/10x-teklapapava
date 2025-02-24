@@ -1,0 +1,70 @@
+.payments-wrapper .phone-screen form {
+    @include text-style(inter, 11px, 300, black, .2px, 0, 24px, 16px,24px, 16px);
+    height: 100%;
+    border-radius: 28px;
+    background: #fff;
+}
+
+.pay-containter p, .top-part h4{
+    @include text-style(inter, .6rem, 400, gray, 12px, 0, 5px, 0, 8px, 0, 0, 0, 0, 0);
+}
+
+.apple-pay {
+    @include text-style(inter, .8rem, 400, white, normal, 0, 0, 0, 16px, 0, 6px, 0, 6px, 0);
+    background-color: black;
+    width: 100%;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px -1px rgba(50, 50, 93, .25), 0 1px 3px -1px rgba(0, 0, 0, .3)
+}
+
+.pay-faster {
+    @include for-displey(felx, center, center, row);
+    @include text-style(inter, .8rem, 400, black, normal, 0, 0, 0, 16px, 0, 6px, 0, 6px, 0);
+    gap: 5px;
+    background-color: #32ddb3;
+    width: 100%;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px -1px rgba(50, 50, 93, .25), 0 1px 3px -1px rgba(0, 0, 0, .3);
+}
+
+.top-part{
+    p:last-child {
+    @include text-style(inter, .8rem, 400, rgba(114, 127, 150, 1), normal, 0, 0, 0, 14px, 0, 0, 0, 0, 0);
+    width: 101.88px;
+    height: 10.98px;
+    }
+}
+    
+.pay-containter{
+    @include for-displey(grid, center, center, row);
+    grid-template-columns: 64px 100px 64px;
+}
+
+.bottom-part label {
+    @include text-style(inter, .6rem, 500, #425466, 12px, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+}
+
+.location-input {
+    @include text-style(inter, .6rem, 500, #62788D, 24px, 0, 0, 0, 0, 0, 4px, 0, 4px, 0);
+    width: 100%;
+    height: 24px;    
+    border: none;
+    box-shadow: 0 0 0 1px rgba(50, 50, 93, .07), 0 2px 3px -1px rgba(50, 50, 93, .12), 0 1px 3px -1px rgba(0, 0, 0, .12);
+}
+
+input {
+    @include text-style(inter, 10px, 500,  #62788D, 24px, 0, 0, 0, 0, 0, 0, 8px, 0, 8px);
+   
+}
+
+.top-part {
+    @include for-displey(flex, start, center, column)
+}
+
+
+
+

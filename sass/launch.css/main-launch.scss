@@ -1,0 +1,123 @@
+.launch-with-ease {
+    @include for-displey(flex, center, center, column);
+    background-color: white;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -250px;
+    padding-top: 200px;
+}
+
+.launch-title{
+    > p:first-child{
+        @include text-style(inter, 16.88px, 400, rgba(99, 91, 255, 1), 28px, 0.2px);
+        @include for-margin(0, 0, 24px, 0);
+    } 
+}
+
+
+.launch-title{
+    h4{
+        @include text-style(inter, 35.77px, 400, rgba(10, 37, 64, 1), 48px, -0.2px);
+        @include for-margin(0, 0, 24px, 0)
+    }
+} 
+
+.launch-title{
+   > p:last-child{
+        @include text-style(inter, 1rem, 400, rgba(66, 84, 102, 1), 28px, 0.2px);    
+        @include for-margin(0, 0, 64px, 0);
+    } 
+}
+
+.bottom-div{
+    h4{
+        @include text-style(inter, 1.5rem, 400, rgba(10, 37, 64, 1), 36px, 0);
+        @include for-margin(0, 0, 12.47px, 0);
+    }
+    p{
+        @include text-style(inter, 1rem, 400, rgba(66, 84, 102, 1), 28px, .2px);
+        @include for-margin(0, 0, 28.01px, 0);
+    }
+} 
+
+.launch-title {
+    width: clamp(320px, 80%, 540px);
+    @include for-margin(98px, 140px, 142px, 0);
+    @include for-padding(0, 16px, 0, 16px);
+    text-align: left;
+}
+
+.main-div{
+    display: flex;
+    gap: 24px;
+    @include for-padding(0, 16px, 0, 16px);
+}
+
+.for-icons{
+    width: 100%;
+    border-radius: 4px;
+    @include for-margin(0, 0, 23.49px, 0);
+}
+
+.bottom-div{
+    height: 100%;
+    transition: 0.3s;
+    background-color: white;
+    @include for-padding(16px, 16px, 16px, 16px);
+}
+
+.bottom-div{
+    a img{
+        @include for-padding(50px, 0, 0, 0,);
+        width: 10px;
+    }
+ }  
+ 
+ .bottom-div{
+    p:last-child{
+     @include for-margin(50px, 0, 0, 0);  
+     }  
+ }
+
+
+ .main-div {
+    .integrated-platform:nth-child(1) .card-bg-img{
+        @include width-height(100%, 200px);
+        background-image: url('../assets/media/container-1.svg');
+        background-repeat: no-repeat;
+    }
+    .integrated-platform:nth-child(2) .card-bg-img{
+        @include width-height(100%, 200px);
+        background-image: url('../assets/media/container-2.svg');
+        background-repeat: no-repeat;
+    }
+    .integrated-platform:nth-child(3) .card-bg-img{
+        @include width-height(100%, 200px);
+        background-image: url('../assets/media/container-3.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

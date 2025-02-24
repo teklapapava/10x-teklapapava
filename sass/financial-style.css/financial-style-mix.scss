@@ -1,0 +1,35 @@
+@mixin text-style ($ff, $fs, $fw, $color, $ln-h, $lt-s,) {
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+    line-height:$ln-h;
+    letter-spacing: $lt-s;
+}
+
+
+@mixin for-displey($fl, $js-c, $al-i, $fl-d){
+    display: $fl;
+    justify-content: $js-c;
+    align-items: $al-i;
+    flex-direction: $fl-d;
+}
+
+@mixin for-padding($pdd-t, $pdd-r, $pdd-b, $pdd-l) {
+    padding-top: $pdd-t;
+    padding-right: $pdd-r;
+    padding-bottom: $pdd-b;
+    padding-left: $pdd-l;
+}
+
+@mixin for-margin($marg-t, $marg-r, $marg-b, $marg-l) {
+    margin-top: $marg-t;
+    margin-right: $marg-r;
+    margin-bottom: $marg-b;
+    margin-left: $marg-l;
+}
+
+@mixin width-height($width, $height) {
+    width: width;
+    height: height;
+}

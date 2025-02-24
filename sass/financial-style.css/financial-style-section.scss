@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.financial-container{
+    width: clamp(500px, 80%, 1080px);
+    display: flex;
+    gap: 120px;
+    justify-content: space-between;
+}
+
+.card-container div, #card-container div{
+    box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25);
+    width: min-content;
+}
+
+.card3 {
+    z-index: 0
+}
+
+.card2:hover, .card3:hover{
+    z-index: 3;
+}
+
+.links a {
+    text-decoration: none;
+    color:rgba(99, 91, 255, 1);
+}
+
+.quantum-container{
+    border-radius: 10px;
+}
+
+.paymants-month > div:hover{
+    background-color: $bckcl;
+    border-radius: 15px;
+}
+
+.no-margin{
+    margin-top: 0;
+}
+
+.mtavar{
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-template-rows: 2c 1fr;
+}

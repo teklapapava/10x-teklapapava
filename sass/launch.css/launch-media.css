@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .launch-with-ease {
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -250px;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1080px) {
+  .main-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .built-wrapper-top .main-caption:nth-child(2) {
+    margin-top: 0;
+  }
+  .built-wrapper-bottom .main-caption:nth-child(2) {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=launch-media.css.map */

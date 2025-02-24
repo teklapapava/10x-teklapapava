@@ -1,0 +1,151 @@
+
+.built-for-growth{
+    @include for-displey(flex, center, center, column);
+    background-color: #F6F9FC;
+}
+
+
+.built-for-growth-wrapper{
+    p:first-child {
+        @include text-style(inter, 1rem, 400, rgba(99, 91, 255, 1), 28px, .2px, 24px, 16px);
+        padding-top: 128px;
+        }
+   h2 {
+    @include text-style(inter, 2rem, 800, rgba(10, 37, 64, 1), 48px, -0.2px, 24px, 16px,);
+   }
+   p:last-child {
+    @include text-style(inter, 1rem, 400, rgba(66, 84, 102, 1), 28px, .2px, 10px, 16px);
+   }
+}
+
+
+
+.built-top-wrapper {
+    width: 100%;
+    margin-top: 120px;
+    @extend %mrg-b;
+}
+
+.built-bottom-wrapper {
+    width: 100%;
+    @extend %mrg-b;
+}
+
+.main-caption {
+    width: 100%; /* Ensures the container spans the full width of its parent */
+    background-color: #ffffff; /* White background */
+    padding: 4px; /* Padding inside the container */
+    &:first-child{
+        @extend %mrg-b;
+    }
+}
+
+.rock-part{
+    @include text-style(inter, .6rem, 400, black, normal, 0, 0, 0,)
+}
+
+
+
+.incorporate-your-company {
+   h4 {
+    @include text-style(inter, 1.5rem, 400, rgba(10, 37, 64, 1), 36px, 0px, 0px, 32px);
+    }
+} 
+
+.incorporate-your-company{
+   p {
+    @include text-style(inter, 16.31px, 400, rgba(66, 84, 102, 1), 28px, 0.2px, 32px, 32px);
+    } 
+} 
+
+.built-for-growth-wrapper {
+    @include for-margin(98px, 140px, 142px, 0);
+    @include for-padding(0, 16px, 0 16px); 
+    width: clamp(320px, 80%, 540px);
+    text-align: left;
+}
+
+.built-wrapper {
+    @include for-margin(0, 0, 120px, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.built-wrapper-top {
+    @include for-margin(0, 0, 56px, 0);
+}
+
+.top-caption {
+    @include for-padding(64px, 0, 0, 64px);
+    background-color: rgba(190, 201, 220, 0.4);
+    border-radius: 5px;
+}
+
+.child-caption {
+    @include for-padding(32px, 0, 0, 32px);
+    display: flex;
+    gap: 112px;
+    background-image: linear-gradient(#fff, rgb(236, 235, 235));
+    border-radius: 5px;
+}
+
+.atlas-part h4, .rock-part h4 {
+    @include for-margin(0, 0, 16px, 0);
+}
+
+.atlas-part{
+    ul{
+        li{
+            @include for-margin(0, 0, 8px, 0);
+            @include for-padding(0, 0, 0, 12px);
+        }
+    }
+} 
+
+.rock-part{
+    ul{
+       li {
+        @include for-margin(0, 0, 8px, 0);
+        @include for-padding(0, 0, 18px, 0);
+        border-bottom: 1px solid rgb(219, 218, 218);
+        } 
+    }
+}
+
+.rock-part {
+    ul{
+        li::before {
+            @include for-margin(0, 20px, 0, 0,);
+            content: url(/assets/media/check.png);
+            border-radius: 50%;
+        }
+    }
+}
+
+.atlas, .payment-icon{
+    display: flex;
+    gap: 12px;
+    width: 40%;
+    background-color: rgba(246, 249, 252, 1);
+    border-radius: 4px;
+    font-family: inter;
+    @include for-margin(32px, 0, 8px,32px);
+}
+
+.message-wrapper {
+    height: 340px;
+    @include for-padding(64px, 0, 0, 64px);
+    background-color: rgba(190, 201, 220, 0.4);
+    border-radius: 5px;
+    position: relative;
+}
+
+.payment-icon{
+    display: flex;
+    gap: 12px;
+    width: 40%;
+    background-color: rgba(246, 249, 252, 1);
+    border-radius: 4px;
+    font-family: inter;
+    @include for-margin(32px, 0, 8px, 32px);
+}

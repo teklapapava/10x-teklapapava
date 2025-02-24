@@ -1,0 +1,30 @@
+.launch-with-ease-wrapper{
+    width: clamp(500px, 80%, 1080px);
+    margin-top: 284px;
+    margin:  auto;
+}
+
+.integrated-platform{
+    background-color: #ffff;
+    width: clamp(320px, 80%, 440px);
+    height: 50%;
+    border-radius: 8px;
+}
+
+
+.integrated-platform:hover .bottom-div {
+    transform: translateY(-50px);
+}
+
+.integrated-platform:hover .bottom-div a {
+    opacity: 1;
+}
+
+.bottom-div a {
+    transition: 0.3s;
+    opacity: 0;
+    color: purple;
+    text-decoration: none;
+    font-family: inter;
+}
+

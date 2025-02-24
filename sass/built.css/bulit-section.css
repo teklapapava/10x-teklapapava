@@ -1,0 +1,37 @@
+.built-container {
+  width: clamp(500px, 80%, 1080px);
+}
+
+.atlas-part ul {
+  list-style: none;
+  border-right: 2px solid rgb(236, 235, 235);
+}
+
+rock-part ul li:last-child {
+  border-bottom: none;
+}
+
+.atlas-part ul li:hover {
+  border-left: 2px solid gray;
+  cursor: pointer;
+}
+
+.rock-part ul li:nth-child(4)::before {
+  content: url(/assets/media/burger-menu.png);
+}
+
+.rock-part ul li:nth-child(5)::before {
+  content: url(/assets/media/bank.png);
+}
+
+.message-container {
+  width: 100%;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.message-container img {
+  width: 100%;
+}/*# sourceMappingURL=bulit-section.css.map */

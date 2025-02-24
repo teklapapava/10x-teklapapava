@@ -1,0 +1,103 @@
+.transaction-container {
+    width: 331px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border: 1.19px solid rgba(196, 204, 216, 1);
+    border-radius: 10px;
+}
+
+.transaction, .transaction2{
+    width: 290.52px;
+    height: 73.82px;
+    padding: 22.62px 20.24px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.transaction-wrapper {
+    position: relative;
+}
+
+.transaction {
+    width: 261px;
+}
+
+.transaction {
+    padding: 14px;
+}
+
+.transaction {
+    position: absolute;
+    top: 10px;
+}
+
+.processing p:first-child{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.processing span{
+    color: rgba(114, 127, 150, 1);
+    font-family: inter;
+}
+
+.tre {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;   /* Invisible left border */
+    border-right: 5px solid transparent;  /* Invisible right border */
+    border-top: 8px solid blue;           /* Blue top border to form the triangle */
+    margin-bottom: 6px;
+}
+
+.tre:last-child {
+    margin-bottom: 0;
+}
+
+.buyers {
+    background-color: $bckgrnd-color;
+    color: $color;
+}
+
+.platform-p{
+    background-color: #3DC9C9;
+    color: $color;
+}
+
+.par-div {
+    outline: 1px dashed #CFD7DF;
+    border-radius: 16px;
+}
+.sellers {
+    background-color: #0CC2FF;
+    color: $color
+}
+
+.paragraph-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    margin-left: 108px;
+}
+
+.paragraph-wrapper p:last-child {
+    box-shadow: 0px 3.57px 8.33px -3.57px rgba(0, 0, 0, 0.3),
+    0px 7.14px 14.29px -2.38px rgba(50, 50, 93, 0.25);
+}
+
+.ellipse {
+    width: 100px;
+    height: 150px;
+    position: relative;
+    bottom: 170px;
+    left: 95px;
+    background-color: #C4CCD8;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: .2;
+}
+
+

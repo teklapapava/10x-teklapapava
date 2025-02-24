@@ -1,0 +1,63 @@
+.transaction2{
+    @include for-displey(flex, space-between, center, row); 
+    position: absolute;
+}
+
+.processing p:last-child {
+    @include text-style(inter, .5rem, 500, black, normal, 0);
+    @include for-padding(5px, 10px, 5px, l0px);
+    width: 70px;
+    border-radius: 4px;
+    background-color: #B9EBCB;
+}
+
+.cost{
+    @include text-style(inter, 16px, 400, rgba(63, 75, 102, 1), normal, 0);
+}
+
+.two-par p:first-child{
+    @include text-style(inter, 12px, 500, black, normal, 0);
+    margin-bottom: 10px;
+}
+
+.sequence { 
+    @include for-displey(flex, center, center, column);
+    position: relative;
+    gap: 5px;
+    top: 120px;
+    z-index: 2;
+}
+
+.sequence p {
+    @include for-padding(8px, 26px, 8px, 26px);
+    font-size: .8rem;
+    margin: 2px;
+    border-radius: 16px;
+}
+
+.price {
+    @include text-style(inter, .8rem, 400, black, 17.86px, .26px);
+    background-color: white;
+    box-shadow: 0px 3.57px 8.33px -3.57px rgba(0, 0, 0, 0.3),
+    0px 7.14px 14.29px -2.38px rgba(50, 50, 93, 0.25);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
