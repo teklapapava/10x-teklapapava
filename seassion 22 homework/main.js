@@ -3,9 +3,9 @@
 
 function compareAttack(pokemon1, attack1, pokemon2, attack2){
     if(attack1 > attack2){
-        console.log(pokemon1 + "  is stronger!");
+        console.log(`${pokemon1} is stronger!`);
     }else{
-        console.log(pokemon2 + " is stronger!")
+        console.log(`${pokemon2} is stronger!`)
     }
 }
 
@@ -16,7 +16,7 @@ compareAttack("Pikachu", 95, "Charizard", 84);
 // 2. Hogwarts Spell Casting – Function Parameters
 
 function castSpell(spell, wizard){
-    console.log(wizard + " casts " + spell);
+    console.log(`${wizard}  casts ${spell}`);
 }
 
 castSpell("Expelliarmus", "Hermione");
@@ -34,7 +34,7 @@ console.log(newBounty);
 // 4. Jedi Training – Default Parameters
 
 function trainJedi(name, strength = 50){
-    return name + " has " + strength + " Power ";
+    return `${name} has  ${strength} Power`;
 }
 
 console.log(trainJedi("Luke", 100));
@@ -44,7 +44,7 @@ console.log(trainJedi("Rey"));
 // 5. Gollum’s Precious – String Manipulation
 
 function gollumSays(phrase){
-    return phrase + "... " + phrase + "... " + phrase + "...";
+    return `${phrase}...${phrase}...${phrase} ...`;
 }
 
 console.log(gollumSays("My precious"));
@@ -63,19 +63,22 @@ console.log(powerUp(5));
 // 7. Naruto’s Shadow Clone Jutsu – Arrow Functions
 
 function shadowClone(count){
-    return count * 5 + " clones created! ";
+    return  count * 5 + " clones created! ";
 }
 
 console.log(shadowClone(10));
 
 // 8. Sorting the Sorting Hat – Callback Functions
 
-function sortStudent(name, callback){
-    console.log("Sorting " + name +  " into...");
-    console.log(callback);   
+function sortStudent(name, Callback){
+    console.log(`Sorting  ${name} into ${Callback()}`);
 }
 
-sortStudent("Hermione ",  "Gryffindor");
+function house(){
+    return "Gryffindor"
+}
+
+sortStudent("Hermione ",  house);
 
 
 // 9. Infinity Gauntlet – Function Scope
@@ -84,7 +87,7 @@ function snapFingers(){
      let  stones = 6; 
 
     function checkStones(){
-        console.log("Thanos has " + stones + " stones.");
+        console.log(`Thanos has ${stones} stones.`);
     } 
     checkStones();
 }
