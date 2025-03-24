@@ -53,7 +53,7 @@ console.log(gollumSays("My precious"));
 
 // 6. Super Mario Power-Up – Function Expressions
 
-function powerUp(jumpHeight){
+const powerUp =  function(jumpHeight){
     return jumpHeight * 2;
 }
 
@@ -62,11 +62,14 @@ console.log(powerUp(5));
 
 // 7. Naruto’s Shadow Clone Jutsu – Arrow Functions
 
-function shadowClone(count){
-    return  count * 5 + " clones created! ";
-}
+const shadowClone = count => count * 5 
 
-console.log(shadowClone(10));
+
+// function shadowClone(count){
+//     return  count * 5 + " clones created! ";
+// }
+
+console.log(`${shadowClone(10)} clones created!`);
 
 // 8. Sorting the Sorting Hat – Callback Functions
 
@@ -108,11 +111,11 @@ function turnBackTime(){
 // 11. Batman’s Secret Identity – Function Closures
 
 function batMan(){
-    let btm = "I am a Batman"
+    // let btm = "I am a Batman"
 
 
         function darkKing(){
-            return btm
+            return "I am a Batman"
         }
         return darkKing;
 
@@ -142,7 +145,6 @@ function  magicMirror(message, transformFunction){
     let transformedMessage = transformFunction(message);
     return "The mirror says: " + transformedMessage;
 }
-
 
 console.log(magicMirror("Will I be rich?", str => str.toUpperCase()));
 
