@@ -525,12 +525,12 @@ function calculateSalary(baseSalary, tips, position){
 }
 
 
-console.log(calculateSalary(2000, 600, "waiter"));  // ➝ 2200  (2000 + 10%)
-console.log(calculateSalary(2500, 100, "waiter"));  // ➝ 2500  (No bonus, tips < 500)
-console.log(calculateSalary(3000, 400, "chef"));    // ➝ 3150  (3000 + 5%)
-console.log(calculateSalary(4000, 500, "manager")); // ➝ 4600  (4000 + 15%)
-console.log(calculateSalary(3500, 200, "manager")); // ➝ 4025  (3500 + 15%)
-console.log(calculateSalary(1800, 700, "barista")); // ➝ "Invalid position"
+console.log(calculateSalary(2000, 600, "waiter"));  
+console.log(calculateSalary(2500, 100, "waiter"));  
+console.log(calculateSalary(3000, 400, "chef"));   
+console.log(calculateSalary(4000, 500, "manager")); 
+console.log(calculateSalary(3500, 200, "manager")); 
+console.log(calculateSalary(1800, 700, "barista")); 
 
 
 
