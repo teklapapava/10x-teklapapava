@@ -24,10 +24,10 @@ console.log(availableAvengers(["Iron Man", "", null,
 // 3. Spider-Man’s Mask Check (Negation !)
 
 function canRemoveMask(peopleAround){
-    if(peopleAround){
-        console.log("Keep the mask on!");
+    if(!peopleAround){
+        console.log("Safe to remove mask!");
     }else{
-        console.log("Safe to remove mask!")
+        console.log("Keep the mask on!")
     }
 }
 
@@ -700,6 +700,10 @@ const A = [
 
 console.log(canMultiplyMatrices(C, D));
 console.log(canMultiplyMatrices(A, B));
+
+
+
+
 
 
 
