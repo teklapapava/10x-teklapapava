@@ -45,7 +45,7 @@ canRemoveMask(3);
 //     }else{
 //         return "Need Ramen Recharge";
 //     }
-// }
+// }  
 
 
 function checkChakra(level){
@@ -81,13 +81,8 @@ console.log(isJediMaster(50, 90));
 // 6. One Piece Treasure Hunt (Boolean Coercion & Conditionals)
 
 function isTreasureSpot(content){
-    if(content){
-        return true;
-    }else{
-        return false;
-    }
+        return !!content;
 }
-
 console.log(isTreasureSpot("gold")); 
 console.log(isTreasureSpot(0)); 
 
@@ -103,15 +98,15 @@ console.log(isTreasureSpot(0));
 // }
 
 function strangePasscode(code1, code2){
-    return code1 !== code2;
+    return code1 == code2 && code1 !== code2;
 }
 
 
 
-console.log(strangePasscode(null, undefined)); // true
-console.log(strangePasscode("0", 0)); // true
-console.log(strangePasscode(0, false)); // true
-console.log(strangePasscode(0, 0)); // false -->
+console.log(strangePasscode(null, undefined)); 
+console.log(strangePasscode("0", 0)); 
+console.log(strangePasscode(0, false)); 
+console.log(strangePasscode(0, 0)); 
 
 
 // // 8. Loki’s Illusions (Object Comparison & Identity)
@@ -152,7 +147,6 @@ console.log(isSameLoki(lokiA, lokiC));
 function schrodingerCat(state1, state2){
     return !!state1 === !!state2; 
 }
-
 
 console.log(schrodingerCat("alive", "dead")); 
 console.log(schrodingerCat(10, undefined)); 
@@ -576,24 +570,43 @@ console.log(deepClosure());
 
 // Ternary operators
 
-function AQI(aqi){
-    if(aqi >= 0 && aqi <= 50){
-        return "Good";
-    }else if(aqi >= 51 && aqi <= 100){
-        return "Moderate";
-    }else if(aqi >= 101 && aqi <= 150){
-        return "Unhealthy (Sensitive Groups)";
-    }else if (aqi >= 151 && aqi <= 200){
-        return "Unhealthy";
-    }else if (aqi >= 201 && aqi <= 300){
-        return "Very Unhealthy";
-    }else{
-        return "Hazardous";
-    }
+// function AQI(aqi){
+//     if(aqi >= 0 && aqi <= 50){
+//         return "Good";
+//     }else if(aqi >= 51 && aqi <= 100){
+//         return "Moderate";
+//     }else if(aqi >= 101 && aqi <= 150){
+//         return "Unhealthy (Sensitive Groups)";
+//     }else if (aqi >= 151 && aqi <= 200){
+//         return "Unhealthy";
+//     }else if (aqi >= 201 && aqi <= 300){
+//         return "Very Unhealthy";
+//     }else{
+//         return "Hazardous";
+//     }
 
+// }
+
+// console.log(AQI(455));
+
+function  AQI(aqi){
+    return aqi >= 0 && aqi <= 50
+    ? "Good"
+    : aqi >= 51 && aqi <= 100
+    ? "Moderate"
+    : aqi >= 101 && aqi <= 150
+    ? "Unhealthy (Sensitive Groups)"
+    : aqi >= 151 && aqi <= 200
+    ? "Unhealthy"
+    : aqi >= 201 && aqi <= 300
+    ? "Very Unhealthy"
+    : "Hazardous"
 }
 
-console.log(AQI(455));
+console.log(AQI(55));
+
+
+
 
 
 // KetKat - switch statement
