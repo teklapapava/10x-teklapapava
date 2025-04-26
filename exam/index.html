@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Quest 2 – Calculate Sector Power
+ Difficulty: Easy (2 pts)
+Story
+ The Grid’s power levels are hidden. You must compute the combined power of two sectors.
+Objective
+ Use arithmetic to sum two power readings and display the result.
+Instructions
+Name your file quest2.js
+
+
+Define a variable sectorA with value 5
+
+
+Define a variable sectorB with value 7
+
+
+Define a constant totalPower as sectorA plus sectorB
+
+
+Print the exact sentence
+ Total power: 12
+
+
+Acceptance Criteria
+sectorA is defined as a variable with value 5
+
+
+sectorB is defined as a variable with value 7
+
+
+totalPower is defined as a constant with value 12
+
+
+The console shows exactly:
+ Total power: 12 -->
+
+ <!-- Quest 4 – Directional Routing
+ Difficulty: Easy (2 pts)
+Story
+ The Grid’s traffic must be directed along the X-axis. Decide your route based on coordinate.
+Objective
+ Use an if/else statement to determine and print the correct direction.
+Instructions
+Name your file quest4.js
+
+
+Define a variable xCoordinate with value -3
+
+
+If xCoordinate is less than 0, print the exact sentence
+ Route: West
+ Otherwise, print
+ Route: East
+
+
+Acceptance Criteria
+xCoordinate is defined as a variable with value -3
+
+
+The console shows exactly:
+ Route: West -->
+<!-- Quest 8 – Retry Strategy
+ Difficulty: Easy (2 pts)
+Story
+ Network retries are limited. You must decide whether to continue retrying.
+Objective
+ Use a ternary expression to choose and display the retry status.
+Instructions
+Name your file quest8.js
+
+
+Create a variable retryCount with value 2
+
+
+Create a constant maxRetries with value 5
+
+
+Create a constant status that uses retryCount < maxRetries ? Continue : Stop
+
+
+Print the exact sentence
+ Status: Continue
+
+
+Acceptance Criteria
+retryCount is defined as a variable with value 2
+
+
+maxRetries is defined as a constant with value 5
+
+
+status is defined as a constant using a ternary expression
+
+
+The console shows exactly:
+ Status: Continue
+
+ -->
+
+ <!-- Quest 7 – System Health Check
+ Difficulty: Easy (2 pts)
+Story
+ The Grid’s CPU and memory modules report their status. You must verify overall system health.
+Objective
+ Combine two boolean statuses and report if the system is OK.
+Instructions
+Name your file quest7.js
+
+
+Create a constant cpuStatus and assign it the value true
+
+
+Create a constant memoryStatus and assign it the value true
+
+
+Create a constant systemOk that uses logical AND between cpuStatus and memoryStatus
+
+
+Print the exact sentence
+ System OK: true
+
+
+Acceptance Criteria
+cpuStatus and memoryStatus are defined as constants with value true
+
+
+systemOk is defined as a constant using logical AND of cpuStatus and memoryStatus
+
+
+The console shows exactly:
+ System OK: true
+
+ -->
+
+ <!-- Quest 3 – Verify Access Level
+ Difficulty: Easy (2 pts)
+Story
+ Each intern has a clearance code. You must check if your code meets the minimum threshold.
+Objective
+ Compare your clearance level against the required level and report the result.
+Instructions
+Name your file quest3.js
+
+
+Define a constant clearanceLevel with value 45
+
+
+Define a constant requiredLevel with value 50
+
+
+Evaluate whether clearanceLevel is greater than or equal to requiredLevel
+
+
+Print the exact sentence
+ Access granted: false
+
+
+Acceptance Criteria
+clearanceLevel is defined as a constant with value 45
+
+
+requiredLevel is defined as a constant with value 50
+
+
+The console shows exactly:
+ Access granted: false
+ -->
+<!-- Quest 42 – Render Node List
+ Difficulty: Medium (3 pts)
+Story
+ You must dynamically display the active node names in the UI.
+Objective
+ Use DOM manipulation and a loop to render list items.
+Instructions
+Name your file quest42.js
+
+
+Assume an HTML page with an empty <ul id="nodeList"></ul>
+
+
+Create a constant activeNodes set to ['nodeA', 'nodeB', 'nodeC']
+
+
+Select the nodeList element
+
+
+Loop over activeNodes and for each name:
+
+
+Create an li element
+
+
+Set its textContent to the node name
+
+
+Append it to nodeList
+
+
+Acceptance Criteria
+The ul#nodeList contains exactly three <li> entries with texts:
+ nodeA
+ nodeB
+ nodeC -->
+
+ <!-- <ul id="nodeList"></ul> -->
+
+
+
+<!-- Quest 40 – Delegate Alert Handlers
+ Difficulty: Medium (3 pts)
+Story
+ Multiple buttons trigger the same grid alert. You must avoid duplicate code by using a callback.
+Objective
+ Attach event listeners via a shared handler function.
+Instructions
+Name your file quest40.js
+
+
+Assume an HTML page with buttons having class alert-btn
+
+
+Declare a function handleAlert that prints exactly Alert triggered
+
+
+Select all alert-btn elements into a list
+
+
+Loop over the list and attach click listeners that call handleAlert
+
+
+Acceptance Criteria
+handleAlert logs “Alert triggered”
+
+
+All buttons with class alert-btn use the same handler
+
+
+Clicking any alert-btn prints exactly:
+ Alert triggered
+
+
+
+ -->
+
+
+
+<!-- Quest H9 – Node Catalog
+ Difficulty: Hard (5 pts)
+
+Story
+ You need to catalog nodes by index and uppercase name for reporting.
+Objective
+ Use map with an arrow function and template literals to build an array of labels.
+Instructions
+Name your file questH9.js
+
+
+Create a constant nodes = ['core', 'grid', 'relay']
+
+
+Use map on nodes with (name, idx) => \${idx + 1}. ${name.toUpperCase()}`and store inlabels`
+
+
+Print exactly:
+Node list: 1. CORE, 2. GRID, 3. RELAY
+
+
+Acceptance Criteria
+labels equals ["1. CORE", "2. GRID", "3. RELAY"]
+
+
+The console shows exactly:
+Node list: 1. CORE, 2. GRID, 3. RELAY
+
+ -->
+
+
+
+
+    <script src="./quest2.js"></script>;
+    <script src="./quest4.js"></script>;
+    <script src="./quest8.js"></script>;
+    <script src="./quest7.js"></script>;
+    <script src="./quest3.js"></script>;
+    <script src="./questH3.js"></script>;
+    <script src="./questH9.js"></script>;
+    <script src="./quest42.js"></script>;
+    <script src="./quest40.js"></script>;
+</body>
+</html>
