@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.for-top{
+    margin-top: 50px;
+}
+
+
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+
+}
+
+.active{
+    background-color: lightcoral;
+    color: white;
+}
