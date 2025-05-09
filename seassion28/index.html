@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Case #1: The Hidden Message
+Scenario: A crucial message was hidden in a webpage by Agent X before they disappeared. The message is stored in an invisible element.
+
+Task:
+- Select an element with ID 'hidden-message' using getElementById
+- Make it visible by changing its style properties
+- Read and decode the message (reverse the text) using string manipulation
+- Display the decoded message in another element with ID 'decoded-message'
+<p id="hidden-message" style="display: none;">!egassem terces a si sihT</p>
+<p>Decoded Message: <span id="decoded-message"></span></p>
+<button onclick="revealMessage()">Reveal Message</button>
+   -->
+  
+  
+   <p id="hidden-message" style="display: none;">!egassem terces a si sihT</p>
+   <p>Decoded Message: <span id="decoded-message"></span></p>
+   <button onclick="revealMessage()">Reveal Message</button>
+  
+
+
+
+   <!-- Case #2: Classified Files
+   Scenario: You've gained access to a digital filing cabinet with classified documents, but they're organized by different security levels.
+   
+   Task:
+   - Select all elements with class 'classified-document' using getElementsByClassName
+   - Filter them based on their 'security-level' attribute
+   - Change the background color of 'high' security documents to red, 'medium' to yellow, and 'low' to green
+   - Add a click event to each document that reveals its contents when clicked
+   <div class="classified" data-security="high">Top Secret Document</div>
+   <div class="classified" data-security="medium">Confidential Report</div>
+   <div class="classified" data-security="low">Public Notice</div    -->
+
+  <div class="classified" data-security="high">Top Secret Document</div>
+  <div class="classified" data-security="medium">Confidential Report</div>
+  <div class="classified" data-security="low">Public Notice</div>
+  
+
+<!-- 
+   Case #3: Suspect Identification
+   Scenario: We need to identify a cyber criminal from a digital lineup. The suspect has left traces in the HTML.
+   
+   Task:
+   - Select all elements with tag name 'suspect' using getElementsByTagName
+   - Check each suspect's data attributes for clues
+   - When a clue matches your evidence (provided in a variable), mark that suspect by adding a 'prime-suspect' class
+   - Create a new element showing 'IDENTIFIED' and append it after the prime suspect
+   <div class="suspect" data-clue="red-hat">Suspect 1</div>
+   <div class="suspect" data-clue="blue-scarf">Suspect 2</div>
+   <div class="suspect" data-clue="green-coat">Suspect 3</div> -->
+   
+   
+   <div class="suspect" data-clue="red-hat">Suspect 1</div>
+   <div class="suspect" data-clue="blue-scarf">Suspect 2</div>
+   <div class="suspect" data-clue="green-coat">Suspect 3</div>
+   
+
+
+<!-- Case #4: Digital Evidence Collection
+Scenario: You need to collect digital evidence scattered throughout a webpage.
+
+Task:
+- Use querySelectorAll to select all elements with the attribute data-evidence='true'
+- For each piece of evidence, create a new list item in an 'evidence-log' unordered list
+- Add an event that lets you mark evidence as 'collected' when clicked
+- Update a counter showing how many pieces of evidence remain
+<ul id="evidence-log"></ul>
+<p>Evidence Remaining: <span id="evidence-count">0</span></p>
+
+<div data-evidence="true">USB Drive</div>
+<div data-evidence="true">Hacked File</div>
+<div data-evidence="true">Suspicious Email</div> -->
+
+
+<ul id="evidence-log"></ul>
+<p>Evidence Remaining: <span id="evidence-count">0</span></p>
+
+<div data-evidence="true">USB Drive</div>
+<div data-evidence="true">Hacked File</div>
+<div data-evidence="true">Suspicious Email</div> 
+
+
+
+<!-- Medium Assignments
+Case #5: The Disappearing Records
+Scenario: A hacker is deleting important information from a database interface. You need to create a system to monitor and recover the data.
+
+Task:
+- Create a form that allows adding new data entries to a table
+- Implement 'delete' buttons for each entry that remove them from the DOM
+- Create an 'audit log' that records each addition and deletion action
+- Add a 'recover' feature that can restore accidentally deleted entries
+- Use event delegation for efficiently handling all delete/recover actions
+<table>
+  <thead>
+    <tr>
+      <th>Data Entry</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="records">
+    <tr>
+      <td>Classified Info</td>
+      <td><button onclick="deleteEntry(this)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<button onclick="recoverLast()">Recover Last Deleted</button>
+<ul id="audit-log"></ul>
+ -->
+
+
+ <form id="data-form">
+  <input type="text" id="data-input" placeholder="Enter Data" required />
+  <button type="submit">Add</button>
+ </form>
+
+ <table>
+  <thead>
+    <tr>
+      <th>Data Entry</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="records">
+    <tr>
+      <td id="ClassifiedInfo">Classified Info</td>
+      <td id="deleteEntry"><button onclick="deleteEntry(this)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<button id="recover-btn" onclick="recoverLast()">Recover Last Deleted</button>
+<ul id="audit-log"></ul>
+
+
+
+
+
+<!-- Case #6: The Code Breaker
+Scenario: You've found an encrypted message system that requires DOM manipulation to decode.
+
+Task:
+- Create an interactive decryption interface with draggable elements
+- Select and rearrange elements with specific classes to form the correct pattern
+- Use event listeners to detect when elements are in the correct positions
+- When the pattern is complete, reveal a hidden message by dynamically updating DOM content
+- Add visual feedback using style manipulation as users get closer to the solution
+<div id="code-container">
+  <div class="draggable" draggable="true">🔑</div>
+  <div class="draggable" draggable="true">🔒</div>
+  <div class="draggable" draggable="true">📜</div>
+</div>
+
+<p id="decoded-text"></p> -->
+
+<br>
+<br>
+
+<div id="code-container">
+  <div class="draggable" draggable="true">🔑</div>
+  <div class="draggable" draggable="true">🔒</div>
+  <div class="draggable" draggable="true">📜</div>
+</div>
+
+<p id="decoded-text"></p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--  innerHTML გაცვლის პატარა მაგალითი-->
+
+<div id="a">🍎</div>
+<div id="b">🍌</div>
+
+<button onclick="swap()">Exchange</button>
+
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="v">🍎</div>
+<div id="y">🍌</div>
+
+<button id="button">Exchange</button>
+
+
+
+<br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<!-- Array.from + map + join მაგალითი -->
+
+<div id="fruits">
+  <span> 🍓 </span>
+  <br>
+  <span> 🍇 </span>
+  <br>
+  <span> 🍉 </span>
+</div>
+
+<p id="result"></p>
+<button onclick="combine()">შეაერთე</button>
+
+<br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+<!-- Case #7: Security Lock Bypass
+Scenario: You're locked out of a critical system and need to bypass a security interface.
+
+Task:
+- Create a sequence of interactive elements that must be activated in a specific order
+- Use event listeners to track user interactions
+- Dynamically create feedback elements showing progress
+- If the wrong sequence is entered, elements reset with animation
+- When the correct sequence is entered, replace the entire interface with a 'Success' message
+<div id="lock-panel">
+  <button class="lock-button">🔲</button>
+  <button class="lock-button">🔲</button>
+  <button class="lock-button">🔲</button>
+</div>
+
+<p id="lock-status">Enter Code</p>
+ -->
+ <div id="lock-panel">
+  <button class="lock-button">🔲</button>
+  <button class="lock-button">🔲</button>
+  <button class="lock-button">🔲</button>
+</div>
+
+<p id="lock-status">Enter Code</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- 
+Case #8: The Shadow Network
+Scenario: You've discovered a hidden communication network embedded within a seemingly innocent webpage.
+
+Task:
+- Traverse the DOM to find elements with specific nested relationships
+- Identify elements where the 3rd child of a parent with class 'network-node' contains a data attribute
+- Extract and combine these hidden data pieces from throughout the DOM tree
+- Create a new interface revealing the combined information
+- Implement an 'alert system' that monitors for DOM changes that might indicate tampering
+<div class="network-node">
+  <p>Normal Text</p>
+  <p>Another Element</p>
+  <p data-message="Alpha">Secret Data</p>
+</div>
+<div class="network-node">
+  <p>Random Info</p>
+  <p>More Text</p>
+  <p data-message="Bravo">Hidden Message</p>
+</div>
+
+<p>Decoded Transmission: <span id="decoded-transmission"></span></p> -->
+
+
+<div class="network-node">
+  <p>Normal Text</p>
+  <p>Another Element</p>
+  <p data-message="Alpha">Secret Data</p>
+</div>
+<div class="network-node">
+  <p>Random Info</p>
+  <p>More Text</p>
+  <p data-message="Bravo">Hidden Message</p>
+</div>
+
+<p>Decoded Transmission: <span id="decoded-transmission"></span></p>
+  
+  
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Case #9: The Hidden Data Vault
+Scenario: A sophisticated system is hiding data inside seemingly ordinary web elements.
+Task:
+Traverse the entire DOM to find elements containing hidden data attributes.
+Extract and organize the data into a readable format.
+Display the extracted data in a dynamic dashboard.
+Allow users to search for specific data patterns and highlight matches.
+<div class="data-container">
+    <p data-hidden="agent-X">🔍 Hidden Data #1</p>
+    <p>Regular Content</p>
+    <p data-hidden="mission-42">🔍 Hidden Data #2</p>
+</div>
+<button onclick="extractHiddenData()">Extract Data</button>
+<ul id="data-list"></ul>
+ -->
+
+ <div class="data-container">
+  <p data-hidden="agent-X">🔍 Hidden Data #1</p>
+  <p>Regular Content</p>
+  <p data-hidden="mission-42">🔍 Hidden Data #2</p>
+</div>
+<button onclick="extractHiddenData()">Extract Data</button>
+<ul id="data-list"></ul>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./main.js"></script>
+</body>
+</html>

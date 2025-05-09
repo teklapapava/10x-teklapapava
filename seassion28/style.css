@@ -1,0 +1,140 @@
+/* Case #1: The Hidden Message */
+/* Case #2: Classified Files */
+/*    Case #3: Suspect Identification  */
+/* 
+  .prime-suspect + div {
+    color: blue;
+    font-style: italic;
+  } */
+  
+
+/*  Case #4: Digital Evidence Collection */
+
+.collected{
+    color: gray;
+    opacity: 0.6;
+}
+
+
+
+/* // <!-- Case #6: The Code Breaker
+ */
+
+
+.draggable{
+  display: inline;
+  padding: 10px;
+  margin: 5px;
+  font-size: 2rem;
+  border: 2px dashed gray;
+  cursor: grab;
+}
+
+
+.drag-over{
+  border-color: green;
+  background-color: #e0ffe0;
+}
+
+
+
+.shake {
+    animation: shake 0.3s;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0px); }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
